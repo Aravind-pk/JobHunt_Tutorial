@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %> 
+
+
+<body>
+    <%- include('./partials/nav.ejs') %> 
+
+    <div class="container m-5 p-5">
+
+        <form action="/add" method="POST">
+     
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Job Title</label>
+            <input type="text" name="title" class="form-control name" id="exampleFormControlInput1" placeholder="title">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control des" name="des" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Salary</label>
+            <input type="number" name="salary" class="form-control salary" id="exampleFormControlInput1" placeholder="title">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Registration link</label>
+            <input type="text" name="link" class="form-control link" id="exampleFormControlInput1" placeholder="title">
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+
+        </form>
+
+
+    </div>
+ 
+</body>
+</html>

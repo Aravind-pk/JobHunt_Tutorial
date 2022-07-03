@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %> 
+
+
+<body>
+    <%- include('./partials/nav.ejs') %> 
+
+    <div class="container">
+        <div class="row">
+
+            <% for( job of jobs) { %> 
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> <%= job.name %> </h5>
+                  <p class="card-text"><%= job.des %></p>
+                  <p class="card-text"><%= job.salary %></p>
+                  <a href=""><p class="card-text">Read More....</p></a>
+                  <a href="<%= job.link %> " class="btn btn-primary">Apply Now</a>
+                </div>
+              </div>
+            </div>
+            <% }%>
+
+            
+            
+          </div>
+      </div>
+</body>
+</html>
